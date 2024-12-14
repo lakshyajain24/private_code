@@ -229,7 +229,7 @@ def store_selected_values(from_value, to_value):
     prevent_initial_call=True,  # Prevent callback from running on page load
 )
 def render_map(n_clicks, layers, avoid_hotspots, from_value, to_value):
-    print(f"Button clicked {n_clicks} times, from_value: {from_value}, to_value: {to_value}")
+    # print(f"Button clicked {n_clicks} times, from_value: {from_value}, to_value: {to_value}")
 
     if not from_value or not to_value:
         return html.Div("Please select both starting and destination locations.")
