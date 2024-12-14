@@ -5,7 +5,7 @@ import dash_bootstrap_components as dbc
 # Initialize Dash app
 app = dash.Dash(
     __name__,
-    pages_folder="C:\\Users\\laksh\\OneDrive\\Desktop\\Code\\private_code\\apps",
+    pages_folder="apps",
     use_pages=True,  # Enables Dash Pages for routing
     external_stylesheets=[dbc.themes.DARKLY],
 )
