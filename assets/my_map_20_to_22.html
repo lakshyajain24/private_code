@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_491855ce7baf4b10a3ed4febb03b47fb {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_491855ce7baf4b10a3ed4febb03b47fb" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_491855ce7baf4b10a3ed4febb03b47fb = L.map(
+        'map_491855ce7baf4b10a3ed4febb03b47fb', {
+        center: [20.2961, 85.8245],
+        zoom: 13,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_1d66ff3fc1454ac2bb868d1b97e6e32d = L.tileLayer(
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+    
+            var circle_marker_c0106bbc3f134bd6a92a7ed71f4b1b0d = L.circleMarker(
+                [40.738, -73.98],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var circle_marker_4b1f6877fa144f098b425d17b02292fe = L.circleMarker(
+                [20.2293485, 85.7741291],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_18a28b40bbd94a92ad88db1cd3b3aedb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f6bc2dcd4ab748a897cd1b2e2fa9368e = $(`<div id="html_f6bc2dcd4ab748a897cd1b2e2fa9368e" style="width: 100.0%; height: 100.0%;">Src: aiims hostel main gate | RD: 30mins | Trips: 1 | Trip Types(1,2,3): 0,0,1</div>`)[0];
+                popup_18a28b40bbd94a92ad88db1cd3b3aedb.setContent(html_f6bc2dcd4ab748a897cd1b2e2fa9368e);
+            
+
+            circle_marker_4b1f6877fa144f098b425d17b02292fe.bindPopup(popup_18a28b40bbd94a92ad88db1cd3b3aedb)
+            ;
+
+            
+        
+    
+            var circle_marker_a4c06eebcd204f959254658abff52b39 = L.circleMarker(
+                [20.2280732, 85.77612490000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_9885799e4397422ca764840ef6363ed2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_997f685fd6ea468cae6f7033dd0d88b0 = $(`<div id="html_997f685fd6ea468cae6f7033dd0d88b0" style="width: 100.0%; height: 100.0%;">Src: aiims hostel main gate 2 | RD: 20mins | Trips: 2 | Trip Types(1,2,3): 0,2,0</div>`)[0];
+                popup_9885799e4397422ca764840ef6363ed2.setContent(html_997f685fd6ea468cae6f7033dd0d88b0);
+            
+
+            circle_marker_a4c06eebcd204f959254658abff52b39.bindPopup(popup_9885799e4397422ca764840ef6363ed2)
+            ;
+
+            
+        
+    
+            var circle_marker_3580cac66ccc48a29701bd07d8bd204c = L.circleMarker(
+                [20.29308523, 85.83473215],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_6bd50209fd1e42a0a24847f40f68b2c5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_391f8bc9b69a49719c69c4d188d20ec6 = $(`<div id="html_391f8bc9b69a49719c69c4d188d20ec6" style="width: 100.0%; height: 100.0%;">Src: ananda bazaar_01 | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_6bd50209fd1e42a0a24847f40f68b2c5.setContent(html_391f8bc9b69a49719c69c4d188d20ec6);
+            
+
+            circle_marker_3580cac66ccc48a29701bd07d8bd204c.bindPopup(popup_6bd50209fd1e42a0a24847f40f68b2c5)
+            ;
+
+            
+        
+    
+            var circle_marker_9bbc8af7842a444f9628f0b065c4c134 = L.circleMarker(
+                [20.29308523, 85.83473215],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_1f078573261741d4b4860dbb4f87cf52 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d6356b2b88a44daab5bc77d1028b2717 = $(`<div id="html_d6356b2b88a44daab5bc77d1028b2717" style="width: 100.0%; height: 100.0%;">Src: ananda bazaar_02 | RD: 10mins | Trips: 2 | Trip Types(1,2,3): 2,0,0</div>`)[0];
+                popup_1f078573261741d4b4860dbb4f87cf52.setContent(html_d6356b2b88a44daab5bc77d1028b2717);
+            
+
+            circle_marker_9bbc8af7842a444f9628f0b065c4c134.bindPopup(popup_1f078573261741d4b4860dbb4f87cf52)
+            ;
+
+            
+        
+    
+            var circle_marker_e8ce4375bc5940b0955158935c45f4d3 = L.circleMarker(
+                [20.29124157, 85.74632573],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_19fb3c120ba847f39114c1ac193b5eea = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6e27038b35a6452b9f8bc7282f73ca84 = $(`<div id="html_6e27038b35a6452b9f8bc7282f73ca84" style="width: 100.0%; height: 100.0%;">Src: bgu boys hostel | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_19fb3c120ba847f39114c1ac193b5eea.setContent(html_6e27038b35a6452b9f8bc7282f73ca84);
+            
+
+            circle_marker_e8ce4375bc5940b0955158935c45f4d3.bindPopup(popup_19fb3c120ba847f39114c1ac193b5eea)
+            ;
+
+            
+        
+    
+            var circle_marker_ac79d2c8b931481a87fc6a18cb7be206 = L.circleMarker(
+                [20.2866271, 85.83586269999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_77f831fc03df460482fdefe0082d4a16 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a8fe1de0b6684bcbbbf6633efd55d035 = $(`<div id="html_a8fe1de0b6684bcbbbf6633efd55d035" style="width: 100.0%; height: 100.0%;">Src: bayababa matha rd_01 | RD: 30mins | Trips: 1 | Trip Types(1,2,3): 0,0,1</div>`)[0];
+                popup_77f831fc03df460482fdefe0082d4a16.setContent(html_a8fe1de0b6684bcbbbf6633efd55d035);
+            
+
+            circle_marker_ac79d2c8b931481a87fc6a18cb7be206.bindPopup(popup_77f831fc03df460482fdefe0082d4a16)
+            ;
+
+            
+        
+    
+            var circle_marker_29e2f099d96f40b69681cd3c52aefbc2 = L.circleMarker(
+                [20.27020497, 85.75971404],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_54822785813b4d9c982fa42ddebb3e2b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d1fb049212f94644a17c5b2dbb11cad4 = $(`<div id="html_d1fb049212f94644a17c5b2dbb11cad4" style="width: 100.0%; height: 100.0%;">Src: bhubaneswarone | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_54822785813b4d9c982fa42ddebb3e2b.setContent(html_d1fb049212f94644a17c5b2dbb11cad4);
+            
+
+            circle_marker_29e2f099d96f40b69681cd3c52aefbc2.bindPopup(popup_54822785813b4d9c982fa42ddebb3e2b)
+            ;
+
+            
+        
+    
+            var circle_marker_6e4a5396efaa411183064350f652287b = L.circleMarker(
+                [20.27703169, 85.82600443],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_3e959fbb4fde45e7a033814f1b5dae21 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6716c75812a14a1681d7de51247cc255 = $(`<div id="html_6716c75812a14a1681d7de51247cc255" style="width: 100.0%; height: 100.0%;">Src: bidyut marg_14 | RD: 20mins | Trips: 1 | Trip Types(1,2,3): 0,1,0</div>`)[0];
+                popup_3e959fbb4fde45e7a033814f1b5dae21.setContent(html_6716c75812a14a1681d7de51247cc255);
+            
+
+            circle_marker_6e4a5396efaa411183064350f652287b.bindPopup(popup_3e959fbb4fde45e7a033814f1b5dae21)
+            ;
+
+            
+        
+    
+            var circle_marker_3dffb0520fb44d04bf2e70bada0a7e51 = L.circleMarker(
+                [20.284039, 85.807895],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_be027fa30819443ba35c440dc97ed30c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_08b060fc283d4e9ea9d934c1d405e23e = $(`<div id="html_08b060fc283d4e9ea9d934c1d405e23e" style="width: 100.0%; height: 100.0%;">Src: crp 3 | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_be027fa30819443ba35c440dc97ed30c.setContent(html_08b060fc283d4e9ea9d934c1d405e23e);
+            
+
+            circle_marker_3dffb0520fb44d04bf2e70bada0a7e51.bindPopup(popup_be027fa30819443ba35c440dc97ed30c)
+            ;
+
+            
+        
+    
+            var circle_marker_f83fa0b149c143a2b00a6a5835cbcc99 = L.circleMarker(
+                [20.2600254, 85.8232656],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_c24e58ecd75a4ac295f246fe114dd43b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_adf3773e7d30424799efa89a29d8a51f = $(`<div id="html_adf3773e7d30424799efa89a29d8a51f" style="width: 100.0%; height: 100.0%;">Src: capital hospital | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_c24e58ecd75a4ac295f246fe114dd43b.setContent(html_adf3773e7d30424799efa89a29d8a51f);
+            
+
+            circle_marker_f83fa0b149c143a2b00a6a5835cbcc99.bindPopup(popup_c24e58ecd75a4ac295f246fe114dd43b)
+            ;
+
+            
+        
+    
+            var circle_marker_512e427b0ed44c29aab9ead9a9af19c7 = L.circleMarker(
+                [20.2699539, 85.80722390000003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_a4c8fadca9f04b5fac67b187c262ae68 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e4eb1721b2194e69a033895164a7e43c = $(`<div id="html_e4eb1721b2194e69a033895164a7e43c" style="width: 100.0%; height: 100.0%;">Src: city women's college | RD: 10mins | Trips: 2 | Trip Types(1,2,3): 2,0,0</div>`)[0];
+                popup_a4c8fadca9f04b5fac67b187c262ae68.setContent(html_e4eb1721b2194e69a033895164a7e43c);
+            
+
+            circle_marker_512e427b0ed44c29aab9ead9a9af19c7.bindPopup(popup_a4c8fadca9f04b5fac67b187c262ae68)
+            ;
+
+            
+        
+    
+            var circle_marker_3280a6e0fb3a4c47aa02360739c9838b = L.circleMarker(
+                [20.3321863, 85.8239969],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_8934339314d64eaa90316618407c7c23 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1ce352658d134aabbc629008c494479b = $(`<div id="html_1ce352658d134aabbc629008c494479b" style="width: 100.0%; height: 100.0%;">Src: damana square_02 | RD: 10mins | Trips: 6 | Trip Types(1,2,3): 6,0,0</div>`)[0];
+                popup_8934339314d64eaa90316618407c7c23.setContent(html_1ce352658d134aabbc629008c494479b);
+            
+
+            circle_marker_3280a6e0fb3a4c47aa02360739c9838b.bindPopup(popup_8934339314d64eaa90316618407c7c23)
+            ;
+
+            
+        
+    
+            var circle_marker_b4287259cc2d4dd191799f94860d857d = L.circleMarker(
+                [20.3321863, 85.8239969],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_3b5886a7c7c3421082cf975889006e23 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6bff079cdcb74e179ddca2cd49d0eeb8 = $(`<div id="html_6bff079cdcb74e179ddca2cd49d0eeb8" style="width: 100.0%; height: 100.0%;">Src: damana square_2 | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_3b5886a7c7c3421082cf975889006e23.setContent(html_6bff079cdcb74e179ddca2cd49d0eeb8);
+            
+
+            circle_marker_b4287259cc2d4dd191799f94860d857d.bindPopup(popup_3b5886a7c7c3421082cf975889006e23)
+            ;
+
+            
+        
+    
+            var circle_marker_af94d7f4b4e441ce829a7aa3417c8d0c = L.circleMarker(
+                [20.26718487, 85.81060099],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_49754ccbe27e4332a417648a359fceec = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0fdf0c822e0046009b8f079e3b5988c7 = $(`<div id="html_0fdf0c822e0046009b8f079e3b5988c7" style="width: 100.0%; height: 100.0%;">Src: ekamra rd_03 | RD: 12mins | Trips: 5 | Trip Types(1,2,3): 4,1,0</div>`)[0];
+                popup_49754ccbe27e4332a417648a359fceec.setContent(html_0fdf0c822e0046009b8f079e3b5988c7);
+            
+
+            circle_marker_af94d7f4b4e441ce829a7aa3417c8d0c.bindPopup(popup_49754ccbe27e4332a417648a359fceec)
+            ;
+
+            
+        
+    
+            var circle_marker_32db40abe1504f72885cf0e2880ba56b = L.circleMarker(
+                [20.2549937, 85.8281522],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_d273156581fd4bd3bac214b971b8fc54 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0467bd21f1774cab9ddc9b64573a8089 = $(`<div id="html_0467bd21f1774cab9ddc9b64573a8089" style="width: 100.0%; height: 100.0%;">Src: forest park rd_02 | RD: 30mins | Trips: 1 | Trip Types(1,2,3): 0,0,1</div>`)[0];
+                popup_d273156581fd4bd3bac214b971b8fc54.setContent(html_0467bd21f1774cab9ddc9b64573a8089);
+            
+
+            circle_marker_32db40abe1504f72885cf0e2880ba56b.bindPopup(popup_d273156581fd4bd3bac214b971b8fc54)
+            ;
+
+            
+        
+    
+            var circle_marker_1fad2bf409de46c6a83e8be91d780844 = L.circleMarker(
+                [20.29861973, 85.82190752],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_5d6b765c99004130a1180ded8fe3f414 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e814f3719f174b0d82194c4c9ce717cf = $(`<div id="html_e814f3719f174b0d82194c4c9ce717cf" style="width: 100.0%; height: 100.0%;">Src: iit bhubaneswar | RD: 30mins | Trips: 1 | Trip Types(1,2,3): 0,0,1</div>`)[0];
+                popup_5d6b765c99004130a1180ded8fe3f414.setContent(html_e814f3719f174b0d82194c4c9ce717cf);
+            
+
+            circle_marker_1fad2bf409de46c6a83e8be91d780844.bindPopup(popup_5d6b765c99004130a1180ded8fe3f414)
+            ;
+
+            
+        
+    
+            var circle_marker_bb485adf32cb4cff9d95c733c1118b84 = L.circleMarker(
+                [20.29333099, 85.74554111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_723020d3c82f44d5b3211c31f1f7a193 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e6ae37838d204e5c9ea5e5ba445c812b = $(`<div id="html_e6ae37838d204e5c9ea5e5ba445c812b" style="width: 100.0%; height: 100.0%;">Src: imi college hostel | RD: 16mins | Trips: 3 | Trip Types(1,2,3): 1,2,0</div>`)[0];
+                popup_723020d3c82f44d5b3211c31f1f7a193.setContent(html_e6ae37838d204e5c9ea5e5ba445c812b);
+            
+
+            circle_marker_bb485adf32cb4cff9d95c733c1118b84.bindPopup(popup_723020d3c82f44d5b3211c31f1f7a193)
+            ;
+
+            
+        
+    
+            var circle_marker_feded5f62b1b43a1bcde9620fefe0d5a = L.circleMarker(
+                [20.29333674, 85.74688908],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_e64bd07725174b509e9f67a0ef73ce76 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_568f572580a042fb95dadd176ff39018 = $(`<div id="html_568f572580a042fb95dadd176ff39018" style="width: 100.0%; height: 100.0%;">Src: imi college_1 | RD: 18mins | Trips: 6 | Trip Types(1,2,3): 2,3,1</div>`)[0];
+                popup_e64bd07725174b509e9f67a0ef73ce76.setContent(html_568f572580a042fb95dadd176ff39018);
+            
+
+            circle_marker_feded5f62b1b43a1bcde9620fefe0d5a.bindPopup(popup_e64bd07725174b509e9f67a0ef73ce76)
+            ;
+
+            
+        
+    
+            var circle_marker_f536266512b549a8acb666289b728aa0 = L.circleMarker(
+                [20.2571929, 85.8333358],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_2d5095bdd5974d01a5e0d4011e62bccb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f4ffb3d8e74048069d7a88c198e8b1a5 = $(`<div id="html_f4ffb3d8e74048069d7a88c198e8b1a5" style="width: 100.0%; height: 100.0%;">Src: janpath_04 | RD: 10mins | Trips: 2 | Trip Types(1,2,3): 2,0,0</div>`)[0];
+                popup_2d5095bdd5974d01a5e0d4011e62bccb.setContent(html_f4ffb3d8e74048069d7a88c198e8b1a5);
+            
+
+            circle_marker_f536266512b549a8acb666289b728aa0.bindPopup(popup_2d5095bdd5974d01a5e0d4011e62bccb)
+            ;
+
+            
+        
+    
+            var circle_marker_8c0e18d923cd43f79138a4515f8b12b4 = L.circleMarker(
+                [20.266406600000003, 85.83997420000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_6307936ba3284a90854aa5be21a3e3ea = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d4400a91f08848878b7a97ca607dca8b = $(`<div id="html_d4400a91f08848878b7a97ca607dca8b" style="width: 100.0%; height: 100.0%;">Src: janpath_06 | RD: 30mins | Trips: 2 | Trip Types(1,2,3): 0,0,2</div>`)[0];
+                popup_6307936ba3284a90854aa5be21a3e3ea.setContent(html_d4400a91f08848878b7a97ca607dca8b);
+            
+
+            circle_marker_8c0e18d923cd43f79138a4515f8b12b4.bindPopup(popup_6307936ba3284a90854aa5be21a3e3ea)
+            ;
+
+            
+        
+    
+            var circle_marker_a800853addd54488bc12665db6cb629f = L.circleMarker(
+                [20.279489, 85.8440918],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_566397d265484b50b0ae8d74df59befc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c72e9c0a354742708ab781281b17e988 = $(`<div id="html_c72e9c0a354742708ab781281b17e988" style="width: 100.0%; height: 100.0%;">Src: janpath_10 | RD: 20mins | Trips: 1 | Trip Types(1,2,3): 0,1,0</div>`)[0];
+                popup_566397d265484b50b0ae8d74df59befc.setContent(html_c72e9c0a354742708ab781281b17e988);
+            
+
+            circle_marker_a800853addd54488bc12665db6cb629f.bindPopup(popup_566397d265484b50b0ae8d74df59befc)
+            ;
+
+            
+        
+    
+            var circle_marker_1dcd4956b0474b5a9fe779e2975aa438 = L.circleMarker(
+                [20.2582022, 85.83409590000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_b2be4ddf01bb4458983b3f19dd3314f2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_61ca3fa7625e482386b4ad2100079442 = $(`<div id="html_61ca3fa7625e482386b4ad2100079442" style="width: 100.0%; height: 100.0%;">Src: janpath_17 | RD: 30mins | Trips: 1 | Trip Types(1,2,3): 0,0,1</div>`)[0];
+                popup_b2be4ddf01bb4458983b3f19dd3314f2.setContent(html_61ca3fa7625e482386b4ad2100079442);
+            
+
+            circle_marker_1dcd4956b0474b5a9fe779e2975aa438.bindPopup(popup_b2be4ddf01bb4458983b3f19dd3314f2)
+            ;
+
+            
+        
+    
+            var circle_marker_84c7469de20c4d24bf4c9b79bfa47ae6 = L.circleMarker(
+                [20.2585707, 85.834388],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_8df3efadee414a6ba7c2f2eb59a7e10f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b24e1fb72e59401a8c4af6e1f569f943 = $(`<div id="html_b24e1fb72e59401a8c4af6e1f569f943" style="width: 100.0%; height: 100.0%;">Src: janpath_26 | RD: 20mins | Trips: 1 | Trip Types(1,2,3): 0,1,0</div>`)[0];
+                popup_8df3efadee414a6ba7c2f2eb59a7e10f.setContent(html_b24e1fb72e59401a8c4af6e1f569f943);
+            
+
+            circle_marker_84c7469de20c4d24bf4c9b79bfa47ae6.bindPopup(popup_8df3efadee414a6ba7c2f2eb59a7e10f)
+            ;
+
+            
+        
+    
+            var circle_marker_700c108d7abd40c1a4081d9825a118c8 = L.circleMarker(
+                [20.259026, 85.8347488],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_b28dc34b1c744f2ca03a08b6c122d04f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_903df5f3f2854cfa8eeeec5e3cd439cb = $(`<div id="html_903df5f3f2854cfa8eeeec5e3cd439cb" style="width: 100.0%; height: 100.0%;">Src: janpath_27 | RD: 30mins | Trips: 1 | Trip Types(1,2,3): 0,0,1</div>`)[0];
+                popup_b28dc34b1c744f2ca03a08b6c122d04f.setContent(html_903df5f3f2854cfa8eeeec5e3cd439cb);
+            
+
+            circle_marker_700c108d7abd40c1a4081d9825a118c8.bindPopup(popup_b28dc34b1c744f2ca03a08b6c122d04f)
+            ;
+
+            
+        
+    
+            var circle_marker_f11f363a64e14533b05352d453b7cc2a = L.circleMarker(
+                [20.2589659, 85.8348372],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_148daabfaa964c4ebfbb989c70c136bc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a43bccc37c2a4180a5e707515d4b0546 = $(`<div id="html_a43bccc37c2a4180a5e707515d4b0546" style="width: 100.0%; height: 100.0%;">Src: janpath_28 | RD: 30mins | Trips: 1 | Trip Types(1,2,3): 0,0,1</div>`)[0];
+                popup_148daabfaa964c4ebfbb989c70c136bc.setContent(html_a43bccc37c2a4180a5e707515d4b0546);
+            
+
+            circle_marker_f11f363a64e14533b05352d453b7cc2a.bindPopup(popup_148daabfaa964c4ebfbb989c70c136bc)
+            ;
+
+            
+        
+    
+            var circle_marker_fbce07fd571940f0aab9432b84418186 = L.circleMarker(
+                [20.2623495, 85.8373901],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_da6fac4e11d14afaa1545361f8d0db0a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ff8f49c7956f4baab8d95ed5e9410c1f = $(`<div id="html_ff8f49c7956f4baab8d95ed5e9410c1f" style="width: 100.0%; height: 100.0%;">Src: janpath_39 | RD: 15mins | Trips: 2 | Trip Types(1,2,3): 1,1,0</div>`)[0];
+                popup_da6fac4e11d14afaa1545361f8d0db0a.setContent(html_ff8f49c7956f4baab8d95ed5e9410c1f);
+            
+
+            circle_marker_fbce07fd571940f0aab9432b84418186.bindPopup(popup_da6fac4e11d14afaa1545361f8d0db0a)
+            ;
+
+            
+        
+    
+            var circle_marker_edbbe03506724006bfc50eefed3d5a53 = L.circleMarker(
+                [20.271226, 85.84239000000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_62ccea961a264e9eb76919ce5e96d308 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_17b7c309deaf4b08a33e370991ab0a5f = $(`<div id="html_17b7c309deaf4b08a33e370991ab0a5f" style="width: 100.0%; height: 100.0%;">Src: janpath_44 | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_62ccea961a264e9eb76919ce5e96d308.setContent(html_17b7c309deaf4b08a33e370991ab0a5f);
+            
+
+            circle_marker_edbbe03506724006bfc50eefed3d5a53.bindPopup(popup_62ccea961a264e9eb76919ce5e96d308)
+            ;
+
+            
+        
+    
+            var circle_marker_157f6a837713465caace2c046c6d67f8 = L.circleMarker(
+                [20.2645833, 85.8392984],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_cee7debee59b4a24a6e8730236284db8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_452803b5c00c411faa79ef1c835f79a1 = $(`<div id="html_452803b5c00c411faa79ef1c835f79a1" style="width: 100.0%; height: 100.0%;">Src: janpath_49 | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_cee7debee59b4a24a6e8730236284db8.setContent(html_452803b5c00c411faa79ef1c835f79a1);
+            
+
+            circle_marker_157f6a837713465caace2c046c6d67f8.bindPopup(popup_cee7debee59b4a24a6e8730236284db8)
+            ;
+
+            
+        
+    
+            var circle_marker_e0a06021f6534dc089cedb85e8421c95 = L.circleMarker(
+                [20.2997267, 85.8172637],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_0e28bf0daa7146289afa5ecd3edd51d1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_40a48129268a48268be6f3a8e109a038 = $(`<div id="html_40a48129268a48268be6f3a8e109a038" style="width: 100.0%; height: 100.0%;">Src: jaydev vihar | RD: 20mins | Trips: 1 | Trip Types(1,2,3): 0,1,0</div>`)[0];
+                popup_0e28bf0daa7146289afa5ecd3edd51d1.setContent(html_40a48129268a48268be6f3a8e109a038);
+            
+
+            circle_marker_e0a06021f6534dc089cedb85e8421c95.bindPopup(popup_0e28bf0daa7146289afa5ecd3edd51d1)
+            ;
+
+            
+        
+    
+            var circle_marker_5671c41dc9ef40f98aac8d1c154817bd = L.circleMarker(
+                [20.35355263, 85.82658626],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_286b7bc19bac46ce844291441be5ad1b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_140b7ed765f94fbebfa3ac678e2f0103 = $(`<div id="html_140b7ed765f94fbebfa3ac678e2f0103" style="width: 100.0%; height: 100.0%;">Src: kiit square | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_286b7bc19bac46ce844291441be5ad1b.setContent(html_140b7ed765f94fbebfa3ac678e2f0103);
+            
+
+            circle_marker_5671c41dc9ef40f98aac8d1c154817bd.bindPopup(popup_286b7bc19bac46ce844291441be5ad1b)
+            ;
+
+            
+        
+    
+            var circle_marker_6d1b4bef70224c87a94e82fd40ad8221 = L.circleMarker(
+                [20.3536875, 85.8183738],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_6fc88655482541c280d2d79fa9cb5897 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_519f5703560a48dca918847edb6c5894 = $(`<div id="html_519f5703560a48dca918847edb6c5894" style="width: 100.0%; height: 100.0%;">Src: kiit stop 4 | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_6fc88655482541c280d2d79fa9cb5897.setContent(html_519f5703560a48dca918847edb6c5894);
+            
+
+            circle_marker_6d1b4bef70224c87a94e82fd40ad8221.bindPopup(popup_6fc88655482541c280d2d79fa9cb5897)
+            ;
+
+            
+        
+    
+            var circle_marker_9aa85ac1648548b98bd9e49c1470fa06 = L.circleMarker(
+                [20.28990395, 85.82607602],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_642f99e6eb054fc491a084b136685e8b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_14609b1b9b1e4593b5490b8f4aeb2a12 = $(`<div id="html_14609b1b9b1e4593b5490b8f4aeb2a12" style="width: 100.0%; height: 100.0%;">Src: ks_01 | RD: 20mins | Trips: 1 | Trip Types(1,2,3): 0,1,0</div>`)[0];
+                popup_642f99e6eb054fc491a084b136685e8b.setContent(html_14609b1b9b1e4593b5490b8f4aeb2a12);
+            
+
+            circle_marker_9aa85ac1648548b98bd9e49c1470fa06.bindPopup(popup_642f99e6eb054fc491a084b136685e8b)
+            ;
+
+            
+        
+    
+            var circle_marker_ea25cfa04df64a11886c2d03a2757333 = L.circleMarker(
+                [20.31466846, 85.82047402],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_0b6bb85570f0425f8032efccc91dbc4b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e1798255ba8d4921a05952b09b95c39d = $(`<div id="html_e1798255ba8d4921a05952b09b95c39d" style="width: 100.0%; height: 100.0%;">Src: kalinga h square_01 | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_0b6bb85570f0425f8032efccc91dbc4b.setContent(html_e1798255ba8d4921a05952b09b95c39d);
+            
+
+            circle_marker_ea25cfa04df64a11886c2d03a2757333.bindPopup(popup_0b6bb85570f0425f8032efccc91dbc4b)
+            ;
+
+            
+        
+    
+            var circle_marker_4fd14e38be8047e9915918e6fb041d85 = L.circleMarker(
+                [20.282905, 85.831616],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_8c4079e460804826aaf9993783904f44 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f4d42f1a7f744a31b94c2cafaa8226af = $(`<div id="html_f4d42f1a7f744a31b94c2cafaa8226af" style="width: 100.0%; height: 100.0%;">Src: madhusudan park | RD: 20mins | Trips: 3 | Trip Types(1,2,3): 1,1,1</div>`)[0];
+                popup_8c4079e460804826aaf9993783904f44.setContent(html_f4d42f1a7f744a31b94c2cafaa8226af);
+            
+
+            circle_marker_4fd14e38be8047e9915918e6fb041d85.bindPopup(popup_8c4079e460804826aaf9993783904f44)
+            ;
+
+            
+        
+    
+            var circle_marker_4c28907202ba42ddb1955663bce7d23f = L.circleMarker(
+                [20.3052766, 85.863337],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_7301d26e194945d287211fae06721269 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c52723cce17e4c37a7da7becb7414c4e = $(`<div id="html_c52723cce17e4c37a7da7becb7414c4e" style="width: 100.0%; height: 100.0%;">Src: palasuni square | RD: 15mins | Trips: 2 | Trip Types(1,2,3): 1,1,0</div>`)[0];
+                popup_7301d26e194945d287211fae06721269.setContent(html_c52723cce17e4c37a7da7becb7414c4e);
+            
+
+            circle_marker_4c28907202ba42ddb1955663bce7d23f.bindPopup(popup_7301d26e194945d287211fae06721269)
+            ;
+
+            
+        
+    
+            var circle_marker_dace61193da34c5cb8267fe3ac5119cc = L.circleMarker(
+                [20.3439681, 85.829122],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_f5223d9af7494fbca3b7d61a2396e3e3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bb0d8ca29031486b945994bdffeaa8a0 = $(`<div id="html_bb0d8ca29031486b945994bdffeaa8a0" style="width: 100.0%; height: 100.0%;">Src: patia square_02 | RD: 30mins | Trips: 2 | Trip Types(1,2,3): 0,0,2</div>`)[0];
+                popup_f5223d9af7494fbca3b7d61a2396e3e3.setContent(html_bb0d8ca29031486b945994bdffeaa8a0);
+            
+
+            circle_marker_dace61193da34c5cb8267fe3ac5119cc.bindPopup(popup_f5223d9af7494fbca3b7d61a2396e3e3)
+            ;
+
+            
+        
+    
+            var circle_marker_bfdf0db1683a4536b7bcb96708ffd389 = L.circleMarker(
+                [20.314324600000006, 85.8272123],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_7f628d7744184736840d5096f86351d9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4cbe8fe897494e1990e2d6fc26c4fe40 = $(`<div id="html_4cbe8fe897494e1990e2d6fc26c4fe40" style="width: 100.0%; height: 100.0%;">Src: press square | RD: 20mins | Trips: 1 | Trip Types(1,2,3): 0,1,0</div>`)[0];
+                popup_7f628d7744184736840d5096f86351d9.setContent(html_4cbe8fe897494e1990e2d6fc26c4fe40);
+            
+
+            circle_marker_bfdf0db1683a4536b7bcb96708ffd389.bindPopup(popup_7f628d7744184736840d5096f86351d9)
+            ;
+
+            
+        
+    
+            var circle_marker_d675836006664edc83c9be506350dc91 = L.circleMarker(
+                [20.3325578, 85.8034672],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_95fcb479b67d4589aec7878255aabc5e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f75d6b65c3874ababb70d2220385cc54 = $(`<div id="html_f75d6b65c3874ababb70d2220385cc54" style="width: 100.0%; height: 100.0%;">Src: sailashree vihar_02 | RD: 10mins | Trips: 13 | Trip Types(1,2,3): 13,0,0</div>`)[0];
+                popup_95fcb479b67d4589aec7878255aabc5e.setContent(html_f75d6b65c3874ababb70d2220385cc54);
+            
+
+            circle_marker_d675836006664edc83c9be506350dc91.bindPopup(popup_95fcb479b67d4589aec7878255aabc5e)
+            ;
+
+            
+        
+    
+            var circle_marker_512af6de3a694b6c8383c0c712ef7364 = L.circleMarker(
+                [20.3347957, 85.8120278],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_ac31ec52e84345978962f831e0e53833 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6470c35e68de4914aad9a9b68a61f3af = $(`<div id="html_6470c35e68de4914aad9a9b68a61f3af" style="width: 100.0%; height: 100.0%;">Src: sailashree vihar_03 | RD: 10mins | Trips: 3 | Trip Types(1,2,3): 3,0,0</div>`)[0];
+                popup_ac31ec52e84345978962f831e0e53833.setContent(html_6470c35e68de4914aad9a9b68a61f3af);
+            
+
+            circle_marker_512af6de3a694b6c8383c0c712ef7364.bindPopup(popup_ac31ec52e84345978962f831e0e53833)
+            ;
+
+            
+        
+    
+            var circle_marker_a46545db1349461fa5689494b62afbeb = L.circleMarker(
+                [20.3160831, 85.8349205],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_1bec9373d4c642469ef95b83ba161a32 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ab107d948eaf4f638cc40791d98b42bd = $(`<div id="html_ab107d948eaf4f638cc40791d98b42bd" style="width: 100.0%; height: 100.0%;">Src: sainik school square | RD: 15mins | Trips: 2 | Trip Types(1,2,3): 1,1,0</div>`)[0];
+                popup_1bec9373d4c642469ef95b83ba161a32.setContent(html_ab107d948eaf4f638cc40791d98b42bd);
+            
+
+            circle_marker_a46545db1349461fa5689494b62afbeb.bindPopup(popup_1bec9373d4c642469ef95b83ba161a32)
+            ;
+
+            
+        
+    
+            var circle_marker_0e633c4624df42df9e686956c986c74c = L.circleMarker(
+                [20.25468, 85.8320135],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_bc1abb58fec84c2c8735416d23e83750 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d5d73aa4b9f046359399e9e09a64ce4f = $(`<div id="html_d5d73aa4b9f046359399e9e09a64ce4f" style="width: 100.0%; height: 100.0%;">Src: sishu bhawan bqs | RD: 20mins | Trips: 1 | Trip Types(1,2,3): 0,1,0</div>`)[0];
+                popup_bc1abb58fec84c2c8735416d23e83750.setContent(html_d5d73aa4b9f046359399e9e09a64ce4f);
+            
+
+            circle_marker_0e633c4624df42df9e686956c986c74c.bindPopup(popup_bc1abb58fec84c2c8735416d23e83750)
+            ;
+
+            
+        
+    
+            var circle_marker_11dc204e4a8141bbba7a3b7c8bd591f5 = L.circleMarker(
+                [20.2562865, 85.8411331],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_7abc88920791469e912109af72ff977c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d0f81507f3d046a6958199936ff3492b = $(`<div id="html_d0f81507f3d046a6958199936ff3492b" style="width: 100.0%; height: 100.0%;">Src: state museum | RD: 20mins | Trips: 3 | Trip Types(1,2,3): 0,3,0</div>`)[0];
+                popup_7abc88920791469e912109af72ff977c.setContent(html_d0f81507f3d046a6958199936ff3492b);
+            
+
+            circle_marker_11dc204e4a8141bbba7a3b7c8bd591f5.bindPopup(popup_7abc88920791469e912109af72ff977c)
+            ;
+
+            
+        
+    
+            var circle_marker_5928c9d5c19c4e72b84d2f92bf2427e1 = L.circleMarker(
+                [20.26652994, 85.83027814],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_6bce78a00edc41c09330a751304a847d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9caa323ce9294c20a4c2aeb745dab557 = $(`<div id="html_9caa323ce9294c20a4c2aeb745dab557" style="width: 100.0%; height: 100.0%;">Src: u1 ag rd_02 | RD: 10mins | Trips: 3 | Trip Types(1,2,3): 3,0,0</div>`)[0];
+                popup_6bce78a00edc41c09330a751304a847d.setContent(html_9caa323ce9294c20a4c2aeb745dab557);
+            
+
+            circle_marker_5928c9d5c19c4e72b84d2f92bf2427e1.bindPopup(popup_6bce78a00edc41c09330a751304a847d)
+            ;
+
+            
+        
+    
+            var circle_marker_205670a64c0c4ce2a70a357265e992b8 = L.circleMarker(
+                [20.2962699, 85.8420824],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_9ae83bbff63243568d6b236226c74c09 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_48d42db122524ae7ac09fe221cc4ed45 = $(`<div id="html_48d42db122524ae7ac09fe221cc4ed45" style="width: 100.0%; height: 100.0%;">Src: vani vihar square | RD: 30mins | Trips: 1 | Trip Types(1,2,3): 0,0,1</div>`)[0];
+                popup_9ae83bbff63243568d6b236226c74c09.setContent(html_48d42db122524ae7ac09fe221cc4ed45);
+            
+
+            circle_marker_205670a64c0c4ce2a70a357265e992b8.bindPopup(popup_9ae83bbff63243568d6b236226c74c09)
+            ;
+
+            
+        
+    
+            var circle_marker_7496235e5fde40bf8db49216f837a93d = L.circleMarker(
+                [20.307947, 85.8202055],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_1bd8c237608c4951a48d1ff40eb6e2ec = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d936e46b3e21477a8fb4bc098ca3faf8 = $(`<div id="html_d936e46b3e21477a8fb4bc098ca3faf8" style="width: 100.0%; height: 100.0%;">Src: xavier square | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_1bd8c237608c4951a48d1ff40eb6e2ec.setContent(html_d936e46b3e21477a8fb4bc098ca3faf8);
+            
+
+            circle_marker_7496235e5fde40bf8db49216f837a93d.bindPopup(popup_1bd8c237608c4951a48d1ff40eb6e2ec)
+            ;
+
+            
+        
+    
+            var circle_marker_97946975e6bc4a6198ea7898d2d2176a = L.circleMarker(
+                [20.274779100000003, 85.82598270000003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_87fd52e7ba8149a2a16efa3fe4a4a827 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_40e1cb7f9cea44eba4b23981a4f9488f = $(`<div id="html_40e1cb7f9cea44eba4b23981a4f9488f" style="width: 100.0%; height: 100.0%;">Src: yaana control room | RD: 10mins | Trips: 1 | Trip Types(1,2,3): 1,0,0</div>`)[0];
+                popup_87fd52e7ba8149a2a16efa3fe4a4a827.setContent(html_40e1cb7f9cea44eba4b23981a4f9488f);
+            
+
+            circle_marker_97946975e6bc4a6198ea7898d2d2176a.bindPopup(popup_87fd52e7ba8149a2a16efa3fe4a4a827)
+            ;
+
+            
+        
+    
+            var circle_marker_3e6051884d6d4e82bd5a610ce78f7570 = L.circleMarker(
+                [20.285165300000006, 85.7514041],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#E37222",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#E37222",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_491855ce7baf4b10a3ed4febb03b47fb);
+            
+    
+            var popup_f0d54de928d84fe88eb723101f683c42 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b47b7d72959b4f9b84f602257da7d7e3 = $(`<div id="html_b47b7d72959b4f9b84f602257da7d7e3" style="width: 100.0%; height: 100.0%;">Src: gothapatana square | RD: 10mins | Trips: 6 | Trip Types(1,2,3): 6,0,0</div>`)[0];
+                popup_f0d54de928d84fe88eb723101f683c42.setContent(html_b47b7d72959b4f9b84f602257da7d7e3);
+            
+
+            circle_marker_3e6051884d6d4e82bd5a610ce78f7570.bindPopup(popup_f0d54de928d84fe88eb723101f683c42)
+            ;
+
+            
+        
+</script>

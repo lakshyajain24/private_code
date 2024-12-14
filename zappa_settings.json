@@ -1,0 +1,24 @@
+{
+    "dev": {
+        "app_function": "app.server",
+        "aws_region": "ap-south-1",
+        "profile_name": "default",
+        "project_name": "mobility-web",
+        "runtime": "python3.8",
+        "s3_bucket": "mobility-web-lambda",
+        "include": [],
+        "slim_handler": true,
+        "exclude": [
+            "*.gz",
+            "*.rar",
+            "*.pyc",
+            "*.zip",
+            ".idea",
+            ".DS_Store",
+            ".vscode",
+            "venv/**",
+            "venv"
+
+        ]
+    }
+}
