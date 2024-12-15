@@ -25,7 +25,19 @@ DELHI_BBOX = box(*DELHI_BOUNDARY)
 # Load Graph Data
 with open("assets/path_finder/delhi_graph_data.pkl", "rb") as f:
     GRAPH = pickle.load(f)
+    
+TO_LOCATION = ""
+FROM_LOCATION = ""
 
+def update_from_location(from_location):
+    global FROM_LOCATION
+    FROM_LOCATION = from_location
+    return FROM_LOCATION
+    
+def update_to_location(to_location):
+    global TO_LOCATION
+    TO_LOCATION = to_location
+    return TO_LOCATION
 # Constants
 COVID_HOTSPOTS_FILE = "assets/path_finder/new.csv"
 DIRECTIONS_REQ_PARAMS = {"geometries": "geojson"}
@@ -173,8 +185,10 @@ def update_selected_locations(from_location, to_location):
         return "Please select both From and To locations to display here."
     selected_text = []
     if from_location:
+        update_from_location(from_location)
         selected_text.append(f"FROM : {json.loads(from_location).get('place_name','')}")
     if to_location:
+        update_to_location(to_location)
         selected_text.append(f"TO : {json.loads(to_location).get('place_name','')}")
     return "\n\n".join(selected_text)
 
@@ -234,6 +248,8 @@ def render_map(n_clicks, layers, avoid_hotspots, from_value, to_value):
     if not from_value or not to_value:
         return html.Div("Please select both starting and destination locations.")
 
+    from_value = FROM_LOCATION
+    to_value = TO_LOCATION
     # Your existing logic to generate map layers
     from_point = get_point_from_dropdown(from_value)
     to_point = get_point_from_dropdown(to_value)
