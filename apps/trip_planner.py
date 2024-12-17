@@ -26,18 +26,16 @@ DELHI_BBOX = box(*DELHI_BOUNDARY)
 with open("assets/path_finder/delhi_graph_data.pkl", "rb") as f:
     GRAPH = pickle.load(f)
     
-TO_LOCATION = ""
-FROM_LOCATION = ""
+TO_LOCATION = []
+FROM_LOCATION = []
 
 def update_from_location(from_location):
-    global FROM_LOCATION
-    FROM_LOCATION = from_location
-    return FROM_LOCATION
+    FROM_LOCATION.append(from_location)
+    print("update from location")
     
 def update_to_location(to_location):
-    global TO_LOCATION
-    TO_LOCATION = to_location
-    return TO_LOCATION
+    TO_LOCATION.append(to_location)
+    print("update to location")
 # Constants
 COVID_HOTSPOTS_FILE = "assets/path_finder/new.csv"
 DIRECTIONS_REQ_PARAMS = {"geometries": "geojson"}
@@ -292,8 +290,9 @@ def render_map(n_clicks, layers, avoid_hotspots, from_value, to_value):
 
 # Helper Functions
 def get_point_from_dropdown(value):
+    extract_value = [v for v in set(value) if v is not None]
     if value:
-        data = json.loads(value)
+        data = json.loads(extract_value[-1])
         return Point(data["center"][0], data["center"][1])
     return None
 
