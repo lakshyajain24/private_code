@@ -29,6 +29,16 @@ with open("assets/path_finder/delhi_graph_data.pkl", "rb") as f:
 TO_LOCATION = []
 FROM_LOCATION = []
 
+def extract_value_from_location(location_list):
+    extract_value = [v for v in set(location_list) if v is not None]
+    if len(extract_value)>1:
+        if extract_value[-1]:
+            return {'value':extract_value[-1]}
+        else:
+            return {'value':""}
+    else:
+        return {'value':""}
+
 def update_from_location(from_location):
     FROM_LOCATION.append(from_location)
     print("update from location")
@@ -179,15 +189,15 @@ layout = dbc.Container(
     [Input("from-location", "value"), Input("to-location", "value")],
 )
 def update_selected_locations(from_location, to_location):
-    if not from_location and not to_location:
-        return "Please select both From and To locations to display here."
     selected_text = []
     if from_location:
         update_from_location(from_location)
-        selected_text.append(f"FROM : {json.loads(from_location).get('place_name','')}")
+        print("location is heree"+from_location)
+        selected_text.append(f"FROM : {extract_value_from_location(FROM_LOCATION).get('value', "")}")
     if to_location:
         update_to_location(to_location)
-        selected_text.append(f"TO : {json.loads(to_location).get('place_name','')}")
+        print("location is heree"+to_location)
+        selected_text.append(f"TO : {extract_value_from_location(TO_LOCATION).get('value', "")}")
     return "\n\n".join(selected_text)
 
 
@@ -212,19 +222,19 @@ def update_to_options(search_value):
         return []
     return get_geocoding_options(search_value)
 
-# Callback to store selected dropdown values
-@callback(
-    [
-        Output("from-location", "value"),
-        Output("to-location", "value"),
-    ],
-    [
-        Input("from-location", "value"),
-        Input("to-location", "value"),
-    ],
-)
-def store_selected_values(from_value, to_value):
-    return from_value, to_value
+# # Callback to store selected dropdown values
+# @callback(
+#     [
+#         Output("from-location", "value"),
+#         Output("to-location", "value"),
+#     ],
+#     [
+#         Input("from-location", "value"),
+#         Input("to-location", "value"),
+#     ],
+# )
+# def store_selected_values(from_value, to_value):
+#     return update_from_location(from_value), update_to_location(to_value)
 
 # Callback to render the map on button click
 @callback(
@@ -242,9 +252,6 @@ def store_selected_values(from_value, to_value):
 )
 def render_map(n_clicks, layers, avoid_hotspots, from_value, to_value):
     # print(f"Button clicked {n_clicks} times, from_value: {from_value}, to_value: {to_value}")
-
-    if not from_value or not to_value:
-        return html.Div("Please select both starting and destination locations.")
 
     from_value = FROM_LOCATION
     to_value = TO_LOCATION
