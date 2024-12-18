@@ -37,16 +37,17 @@ def extract_value_from_location(location_list):
         return {'value':"Unknown"}
 
 def update_from_location(from_location):
+    global FROM_LOCATION  # Declare global to modify the global variable
     FROM_LOCATION.append(from_location)
     # Remove the first two elements if the list has more than 7 items.
-    if len(FROM_LOCATION)>7:
+    if len(FROM_LOCATION) > 7:
         FROM_LOCATION = FROM_LOCATION[2:]
-    #print("update from location")
-    
+
 def update_to_location(to_location):
+    global TO_LOCATION  # Declare global to modify the global variable
     TO_LOCATION.append(to_location)
     # Remove the first two elements if the list has more than 7 items.
-    if len(TO_LOCATION)>7:
+    if len(TO_LOCATION) > 7:
         TO_LOCATION = TO_LOCATION[2:]
     #print("update to location")
 # Constants
