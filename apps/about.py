@@ -8,7 +8,7 @@ dash.register_page(__name__, path="/about")
 def create_team_member_card(name, img_src, role, description, link, link_text):
     return dbc.Card(
         [
-            dbc.CardHeader(html.Img(src=img_src, className="card-img-top", alt=name)),
+            dbc.CardHeader(html.Img(src=img_src, className="card-img-top", alt=name),style={"height":"40%"}),
             dbc.CardFooter(
                 dbc.Col(
                     [
@@ -21,7 +21,7 @@ def create_team_member_card(name, img_src, role, description, link, link_text):
                         html.P(f"Role: {role}"),
                     ],
                     className="text-center",
-                ),
+                ),style={"height":"60%"}
             ),
         ],
         body=True,
@@ -103,8 +103,10 @@ layout = html.Div(
                 dbc.Row(
                     dbc.Col(html.H5("TEAM MEMBERS:", className="mb-3 font-weight-bold")),
                 ),
+                # Updated Team Members Section with 2-3-2 layout
                 dbc.Row(
                     [
+                        # First Row - 2 Cards
                         dbc.Col(
                             create_team_member_card(
                                 "Dr. Devanjan Bhattacharya",
@@ -114,6 +116,7 @@ layout = html.Div(
                                 "https://www.law.ed.ac.uk/people/dr-devanjan-bhattacharya",
                                 "Profile",
                             ),
+                            width=3,
                             className="mb-4",
                         ),
                         dbc.Col(
@@ -125,12 +128,9 @@ layout = html.Div(
                                 "https://sumitmishra209.wixsite.com/mysite",
                                 "Profile",
                             ),
+                            width=3,
                             className="mb-4",
                         ),
-                    ]
-                ),
-                dbc.Row(
-                    [
                         dbc.Col(
                             create_team_member_card(
                                 "Atanshi Chaturvedi",
@@ -140,6 +140,7 @@ layout = html.Div(
                                 "#",
                                 "Profile",
                             ),
+                            width=3,
                             className="mb-4",
                         ),
                         dbc.Col(
@@ -151,10 +152,53 @@ layout = html.Div(
                                 "#",
                                 "Profile",
                             ),
+                            width=3,
                             className="mb-4",
                         ),
                     ]
                 ),
+                dbc.Row(
+                    [
+                        # Second Row - 3 Cards
+                        dbc.Col(
+                            create_team_member_card(
+                                "Nishu Sharma",
+                                "https://media.licdn.com/dms/image/v2/D5603AQGOQ-SgZnhqrg/profile-displayphoto-shrink_400_400/B56ZOruY6FGgAg-/0/1733752885555?e=1740009600&v=beta&t=j7_SpaEUJV7KJyhlBtcYV4fWGwKlgy32urk6vHRrLZ4",
+                                "Research Consultant",
+                                """Consultant""",
+                                "https://www.linkedin.com/in/lokesh-ladna/",
+                                "Profile",
+                            ),
+                            width=4,
+                            className="mb-4",
+                        ),
+                        dbc.Col(
+                            create_team_member_card(
+                                "Lakshya Jain",
+                                "https://media.licdn.com/dms/image/v2/D5603AQE7I0wzhsv4CQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1702707425077?e=1740009600&v=beta&t=dqB4KUwRDot-3fAuNV3B4ZoL_TGGsKKjfBgWW0QIZGs",
+                                "Research Developer",
+                                """Software Engineer | MCA""",
+                                "https://www.linkedin.com/in/lakshya-jain-069037179/",
+                                "Profile",
+                            ),
+                            width=4,
+                            className="mb-4",
+                        ),
+                        dbc.Col(
+                            create_team_member_card(
+                                "Lokesh Ladna",
+                                "https://media.licdn.com/dms/image/v2/D5603AQGwcozc4a-SRQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718239413254?e=1740009600&v=beta&t=5ftVpuF4OgoHUemQVCGi5DeAuKL0LAVownfSeDcZb-s",
+                                "Research Consultant",
+                                """Consultant""",
+                                "https://www.linkedin.com/in/lokesh-ladna/",
+                                "Profile",
+                            ),
+                            width=4,
+                            className="mb-4",
+                        ),
+                    ]
+                ),
+
 
                 # Acknowledgment Section
                 dbc.Row(

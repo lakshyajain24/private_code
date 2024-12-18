@@ -38,11 +38,17 @@ def extract_value_from_location(location_list):
 
 def update_from_location(from_location):
     FROM_LOCATION.append(from_location)
-    print("update from location")
+    # Remove the first two elements if the list has more than 7 items.
+    if len(FROM_LOCATION)>7:
+        FROM_LOCATION = FROM_LOCATION[2:]
+    #print("update from location")
     
 def update_to_location(to_location):
     TO_LOCATION.append(to_location)
-    print("update to location")
+    # Remove the first two elements if the list has more than 7 items.
+    if len(TO_LOCATION)>7:
+        TO_LOCATION = TO_LOCATION[2:]
+    #print("update to location")
 # Constants
 COVID_HOTSPOTS_FILE = "assets/path_finder/new.csv"
 DIRECTIONS_REQ_PARAMS = {"geometries": "geojson"}
@@ -340,7 +346,7 @@ layout=dbc.Container(
 )
 def update_selected_locations(from_location):
     update_from_location(from_location)
-    print("location is here: " + str(from_location))
+    #print("location is here: " + str(from_location))
     val = extract_value_from_location(FROM_LOCATION).get('value')
     if val=="Unknown" or not val:
         return "Unknown"
@@ -353,7 +359,7 @@ def update_selected_locations(from_location):
 )
 def update_selected_locations(to_location):
     update_to_location(to_location)
-    print("location is here: " + str(to_location))
+    #print("location is here: " + str(to_location))
     val = extract_value_from_location(TO_LOCATION).get('value')
     if val=="Unknown" or not val:
         return "Unknown"
