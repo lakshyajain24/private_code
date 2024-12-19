@@ -113,11 +113,11 @@ layout = html.Div(
                                 "assets/devanjan.png",
                                 "Principal Investigator",
                                 """Marie Skłodowska-Curie Actions Fellow, University of Edinburgh.""",
-                                "https://www.law.ed.ac.uk/people/dr-devanjan-bhattacharya",
+                                "https://edwebprofiles.ed.ac.uk/profile/devanjan-bhattacharya",
                                 "Profile",
                             ),
                             width=3,
-                            className="mb-4",
+                            className="mb-3",
                         ),
                         dbc.Col(
                             create_team_member_card(
@@ -129,7 +129,7 @@ layout = html.Div(
                                 "Profile",
                             ),
                             width=3,
-                            className="mb-4",
+                            className="mb-3",
                         ),
                         dbc.Col(
                             create_team_member_card(
@@ -141,7 +141,7 @@ layout = html.Div(
                                 "Profile",
                             ),
                             width=3,
-                            className="mb-4",
+                            className="mb-3",
                         ),
                         dbc.Col(
                             create_team_member_card(
@@ -153,7 +153,7 @@ layout = html.Div(
                                 "Profile",
                             ),
                             width=3,
-                            className="mb-4",
+                            className="mb-3",
                         ),
                     ]
                 ),
@@ -176,7 +176,7 @@ layout = html.Div(
                             create_team_member_card(
                                 "Lakshya Jain",
                                 "https://media.licdn.com/dms/image/v2/D5603AQE7I0wzhsv4CQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1702707425077?e=1740009600&v=beta&t=dqB4KUwRDot-3fAuNV3B4ZoL_TGGsKKjfBgWW0QIZGs",
-                                "Research Developer",
+                                "Research Consultant",
                                 """Software Engineer | MCA""",
                                 "https://www.linkedin.com/in/lakshya-jain-069037179/",
                                 "Profile",

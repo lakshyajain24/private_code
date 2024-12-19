@@ -8,8 +8,8 @@ def create_card(title, button_text, button_link):
     return dbc.Card(
         [
             dbc.CardHeader(
-                html.H4(title, className="text-center"),
-                style={"height": "20vh"},
+                html.H5(title, className="text-center"),
+                style={"height": "10vh"},
             ),
             dbc.CardFooter(
                 dbc.Button(
@@ -42,22 +42,47 @@ layout = html.Div(
                 ),
                 # Description Section
                 dbc.Row(
+                    [
+                        dbc.Col(
+                            dbc.Card(
+                                dbc.CardBody(
+                                    html.Div([
+                                        html.P("MobilitySafe: Increasing safety and sustainability of micro-mobility modes in pandemic"),
+                                        html.P("""The MobilitySafe project aims to develop a map-based tool to help individuals navigate cities in times of pandemic and conflict.
+                                                Walking and Cycling in India.
+                                                In times of pandemic and conflict, public transport and vehicle sharing services are frequently halted or avoided, and many people turn to cycling or walking for small distances.
+                                                By partnering and working with urban development companies and agencies, such as GIZ India and Deloitte India, alongside local authorities, MobilitySafe aims to provide an open app and web-based utility to help users determine safe walking and cycling routes that avoid transmission spots or conflict zones.
+                                                Led by Dr. Devanjan Bhattacharya, Trained Research Fellow, the project will initially focus on the Indian pilot cities of Bhuvaneshwar and New Delhi, which were selected by the German Government for special support on their way to becoming Smart Cities.
+                                        """),
+                                        html.P("The Mobility Dashboard is live, and the data is available on this site and also on request."),
+                                        html.P("MobilitySafe is funded by the ESRC Impact Acceleration Account scheme."),
+                                        html.Hr(),  # Add a horizontal rule to separate the main content from the key features
+                                        html.H5("Key Features"),
+                                        html.Ul([
+                                            html.Li("Real-time updates: Stay informed about changing conditions."),
+                                            html.Li("Customizable routes: Plan your journey based on your preferences."),
+                                            html.Li("Community-driven: Help us make your city safer for everyone."),
+                                        ]),
+                                        html.P("Let's build a safer, healthier city together."),
+                                    ], style={"text-align":"justify"})
+                                )
+                            ),
+                            className="mb-4",
+                            width=7
+                        ),
                     dbc.Col(
-                        html.H5(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        dbc.Card(
+                            dbc.CardBody(
+                                html.Img(src="assets/safepathimage.jpeg", className="card-img-top"), style={"text-align":"justify"},
+                            ),
                         ),
                         className="mb-4",
+                        width=5
                     )
+                    ]
                 ),
-                dbc.Row(
-                    dbc.Col(
-                        html.H5(
-                            """Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-                            took a galley of type and scrambled it to make a type specimen book.""",
-                        ),
-                        className="mb-5",
-                    )
-                ),
+
+
                 # Cards Section
                 dbc.Row(
                     [
@@ -65,23 +90,16 @@ layout = html.Div(
                             create_card(
                                 "Read more about our work",
                                 "Read more..",
-                                "https://mobility-web-deploy.herokuapp.com",
+                                "https://www.law.ed.ac.uk/research/research-projects/mobilitysafe",
                             ),
                             className="mb-4",
                         ),
-                        dbc.Col(
-                            create_card(
-                                "Access the code used to build this dashboard",
-                                "GitHub",
-                                "https://github.com/mobility-dashboard",
-                            ),
-                            className="mb-4",
-                        ),
+
                         dbc.Col(
                             create_card(
                                 "Check out demo",
                                 "Demo",
-                                "https://mobility-web-deploy.herokuapp.com/trip-planner",
+                                "http://65.2.142.95:8000/trip-planner",
                             ),
                             className="mb-4",
                         ),
@@ -95,7 +113,7 @@ layout = html.Div(
                             "Special thanks to the University of Edinburgh for funding this project",
                             href="https://www.ed.ac.uk/",
                             className="text-center",
-                        )
+                        ), width=12
                     )
                 ),
             ]
